@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="##redis数据库安装(https://www.cnblogs.com/silent2012/p/3499654.html)##按着这个博主的步骤安装redis数据库里面有个需要注意的地方1.现版本的redis.conf是在主目录下,不在src目录下.2.默认端口63793.启动这样操作./redis-server ./redis.conf &amp;amp; (&amp;amp;是在后台运行，redis默认会">
+<meta name="description" content="redis数据库安装参考https://www.cnblogs.com/silent2012/p/3499654.html按着这个博主的步骤安装redis数据库里面有个需要注意的地方1.现版本的redis.conf是在主目录下,不在src目录下.2.默认端口63793.启动这样操作./redis-server ./redis.conf &amp;amp; (&amp;amp;是在后台运行，redis默认会在前台运">
 <meta property="og:type" content="article">
 <meta property="og:title" content="proxypool">
 <meta property="og:url" content="http://yoursite.com/2018/07/30/proxypool/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="##redis数据库安装(https://www.cnblogs.com/silent2012/p/3499654.html)##按着这个博主的步骤安装redis数据库里面有个需要注意的地方1.现版本的redis.conf是在主目录下,不在src目录下.2.默认端口63793.启动这样操作./redis-server ./redis.conf &amp;amp; (&amp;amp;是在后台运行，redis默认会">
+<meta property="og:description" content="redis数据库安装参考https://www.cnblogs.com/silent2012/p/3499654.html按着这个博主的步骤安装redis数据库里面有个需要注意的地方1.现版本的redis.conf是在主目录下,不在src目录下.2.默认端口63793.启动这样操作./redis-server ./redis.conf &amp;amp; (&amp;amp;是在后台运行，redis默认会在前台运">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-07-30T09:18:47.239Z">
+<meta property="og:updated_time" content="2018-07-30T09:25:21.170Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="proxypool">
-<meta name="twitter:description" content="##redis数据库安装(https://www.cnblogs.com/silent2012/p/3499654.html)##按着这个博主的步骤安装redis数据库里面有个需要注意的地方1.现版本的redis.conf是在主目录下,不在src目录下.2.默认端口63793.启动这样操作./redis-server ./redis.conf &amp;amp; (&amp;amp;是在后台运行，redis默认会">
+<meta name="twitter:description" content="redis数据库安装参考https://www.cnblogs.com/silent2012/p/3499654.html按着这个博主的步骤安装redis数据库里面有个需要注意的地方1.现版本的redis.conf是在主目录下,不在src目录下.2.默认端口63793.启动这样操作./redis-server ./redis.conf &amp;amp; (&amp;amp;是在后台运行，redis默认会在前台运">
 
 
 
@@ -299,9 +299,9 @@
       
 
       
-        <p>##redis数据库安装(<a href="https://www.cnblogs.com/silent2012/p/3499654.html)##" target="_blank" rel="noopener">https://www.cnblogs.com/silent2012/p/3499654.html)##</a><br>按着这个博主的步骤安装redis数据库<br>里面有个需要注意的地方<br>1.现版本的redis.conf是在主目录下,不在src目录下.<br>2.默认端口6379<br>3.启动这样操作./redis-server ./redis.conf &amp; (&amp;是在后台运行，redis默认会在前台运行，需要注意)<br>失败了尝试给文件夹加上足够权限，或者可能是路径问题.</p>
+        <h2 id="redis数据库安装"><a href="#redis数据库安装" class="headerlink" title="redis数据库安装"></a>redis数据库安装</h2><p>参考<a href="https://www.cnblogs.com/silent2012/p/3499654.html" target="_blank" rel="noopener">https://www.cnblogs.com/silent2012/p/3499654.html</a><br>按着这个博主的步骤安装redis数据库<br>里面有个需要注意的地方<br>1.现版本的redis.conf是在主目录下,不在src目录下.<br>2.默认端口6379<br>3.启动这样操作./redis-server ./redis.conf &amp; (&amp;是在后台运行，redis默认会在前台运行，需要注意)<br>失败了尝试给文件夹加上足够权限，或者可能是路径问题.</p>
 <p>然后安scrapy到下班也没弄好,感觉我这个版本的centos有点问题，照着百度前20多个答案安了各种包 都解决不了. gcc编译仍然有问题..</p>
-<p>##发现了另外一篇黑科技代理池的文章..windows下就能用的,很方便了##<br><a href="https://github.com/qiyeboy/IPProxyPool" target="_blank" rel="noopener">https://github.com/qiyeboy/IPProxyPool</a><br><a href="http://www.cnblogs.com/qiyeboy/p/5693128.html" target="_blank" rel="noopener">http://www.cnblogs.com/qiyeboy/p/5693128.html</a><br>照着操作就行了,就一点小问题,python3下的话可能会稍微有点问题<br>web.py必须去官网下载<br>最后解压后python setup.py install<br>然后安装到0.40就会报错，但其实是成功安装了的<br>好像这种姿势也可以 pip install web.py==0.40.dev0<br>然后文章里还少提了一个psutil库的安装,<br>pip install psutil即可.<br>这个代理池除了直接 python IPProxy.py运行外,还可以对我们的爬虫提供API,<br>不爬虫使用的话,我们可以直接在浏览器里面找<br><a href="http://localhost:8000/" target="_blank" rel="noopener">http://localhost:8000/</a><br>第一个参数是IP,第二个参数是端口号,第三个参数是分数,就是越稳定分数越高.<br>然后直接在IE浏览器里改代理就行了</p>
+<h2 id="发现了另外一篇黑科技代理池的文章-windows下就能用的-很方便了"><a href="#发现了另外一篇黑科技代理池的文章-windows下就能用的-很方便了" class="headerlink" title="发现了另外一篇黑科技代理池的文章..windows下就能用的,很方便了"></a>发现了另外一篇黑科技代理池的文章..windows下就能用的,很方便了</h2><p><a href="https://github.com/qiyeboy/IPProxyPool" target="_blank" rel="noopener">https://github.com/qiyeboy/IPProxyPool</a><br><a href="http://www.cnblogs.com/qiyeboy/p/5693128.html" target="_blank" rel="noopener">http://www.cnblogs.com/qiyeboy/p/5693128.html</a><br>照着操作就行了,就一点小问题,python3下的话可能会稍微有点问题<br>web.py必须去官网下载<br>最后解压后python setup.py install<br>然后安装到0.40就会报错，但其实是成功安装了的<br>好像这种姿势也可以 pip install web.py==0.40.dev0<br>然后文章里还少提了一个psutil库的安装,<br>pip install psutil即可.<br>这个代理池除了直接 python IPProxy.py运行外,还可以对我们的爬虫提供API,<br>不爬虫使用的话,我们可以直接在浏览器里面找<br><a href="http://localhost:8000/" target="_blank" rel="noopener">http://localhost:8000/</a><br>第一个参数是IP,第二个参数是端口号,第三个参数是分数,就是越稳定分数越高.<br>然后直接在IE浏览器里改代理就行了</p>
 <p>今后再也不怕封IP了2333</p>
 
       
@@ -387,8 +387,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -430,6 +439,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#redis数据库安装"><span class="nav-number">1.</span> <span class="nav-text">redis数据库安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#发现了另外一篇黑科技代理池的文章-windows下就能用的-很方便了"><span class="nav-number">2.</span> <span class="nav-text">发现了另外一篇黑科技代理池的文章..windows下就能用的,很方便了</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
